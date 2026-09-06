@@ -9258,3 +9258,180 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#24a3b1);}
   width: 100% !important;
   margin: 0 auto !important;
 }
+
+
+/* === KWALITY DENTAL: SMOOTH SERVICES SLIDER & DOCTOR SPOTLIGHT === */
+
+/* Kill all sticky/scroll-jacking traps completely */
+.section_service {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.service_sticky-trigger {
+  height: auto !important;
+  position: static !important;
+}
+.service_sticky-camera {
+  height: auto !important;
+  position: static !important;
+  top: auto !important;
+  flex-flow: column !important;
+}
+.scroll-mobile_trigger {
+  height: auto !important;
+  padding-bottom: 0 !important;
+}
+.scroll-mobile_camera {
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Services Slider - inspired by story_slider with smooth transition */
+.services_slider {
+  width: 100% !important;
+  background-color: transparent !important;
+  height: auto !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+.services-slider_mask {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+}
+.services-slider_slide {
+  width: 100% !important;
+  height: auto !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+  white-space: normal !important;
+}
+.services_slider .service_item {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 480px !important;
+  border-radius: 24px !important;
+  box-sizing: border-box !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+}
+.services-slider_arrow-wrap {
+  border: 1px solid var(--color-shadow--dark-80, rgba(0,0,0,0.15)) !important;
+  border-radius: 50% !important;
+  background-color: #ffffff !important;
+  width: 52px !important;
+  height: 52px !important;
+  color: var(--primary-accent, #24a3b1) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
+  transition: all 0.25s ease !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+.services-slider_arrow-wrap:hover {
+  background-color: var(--primary-accent, #24a3b1) !important;
+  color: #ffffff !important;
+  transform: translateY(-50%) scale(1.08) !important;
+}
+.services-slider_arrow-wrap.w-slider-arrow-left {
+  left: -26px !important;
+  right: auto !important;
+}
+.services-slider_arrow-wrap.w-slider-arrow-right {
+  right: -26px !important;
+  left: auto !important;
+}
+@media screen and (max-width: 991px) {
+  .services-slider_arrow-wrap.w-slider-arrow-left {
+    left: 8px !important;
+  }
+  .services-slider_arrow-wrap.w-slider-arrow-right {
+    right: 8px !important;
+  }
+}
+.services-slider_arrow {
+  width: 20px !important;
+  height: 14px !important;
+}
+.services_slider .slide-nav {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 24px !important;
+  position: static !important;
+  height: auto !important;
+}
+.services_slider .w-slider-dot {
+  background-color: rgba(36,163,177,0.25) !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+.services_slider .w-slider-dot.w-active {
+  background-color: var(--primary-accent, #24a3b1) !important;
+  width: 32px !important;
+  border-radius: 6px !important;
+}
+
+/* Doctor Spotlight: Full body visible, NO text overlapping the doctor */
+.doctor-spotlight_wrapper {
+  max-width: 940px !important;
+  margin: 0 auto !important;
+  background: #ffffff !important;
+  border-radius: 24px !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.06) !important;
+  border: 1px solid rgba(0,0,0,0.06) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+}
+.doctor-spotlight_image-col {
+  flex: 0 0 42% !important;
+  min-height: 520px !important;
+  position: relative !important;
+  background: #f1f5f9 !important;
+  overflow: hidden !important;
+}
+.doctor-spotlight_img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+}
+.doctor-spotlight_content-col {
+  flex: 1 1 58% !important;
+  padding: 40px 36px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+}
+@media screen and (max-width: 767px) {
+  .doctor-spotlight_wrapper {
+    flex-direction: column !important;
+  }
+  .doctor-spotlight_image-col {
+    flex: none !important;
+    width: 100% !important;
+    height: 440px !important;
+    min-height: 440px !important;
+  }
+  .doctor-spotlight_content-col {
+    flex: none !important;
+    width: 100% !important;
+    padding: 28px 22px !important;
+  }
+}
