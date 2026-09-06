@@ -9137,3 +9137,135 @@ footer{border-top:3px solid var(--primitive-color--primary-500,#2f80ff);}
 
 /* team-header-readability */
 .section_team .home-team_header-title,.section_team .home-team_header-para{text-shadow:0 2px 14px rgba(0,0,0,.45);}
+
+
+/* Fix logo width and prevent cut off */
+.navbar_logo {
+  max-width: 240px !important;
+  width: auto !important;
+}
+.logo_image {
+  max-width: 240px !important;
+  width: auto !important;
+  height: 34px !important;
+  object-fit: contain !important;
+}
+
+/* Fix Comprehensive Dental Care: Drag slider instead of scroll-jacking */
+.scroll-mobile_trigger {
+  height: auto !important;
+  padding-bottom: 20px !important;
+}
+.service_wrap {
+  position: relative !important;
+  height: auto !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory !important;
+  -webkit-overflow-scrolling: touch !important;
+  cursor: grab !important;
+  user-select: none !important;
+  padding-bottom: 24px !important;
+  scrollbar-width: thin !important;
+}
+.service_wrap:active {
+  cursor: grabbing !important;
+}
+.scroll_track {
+  width: max-content !important;
+  display: flex !important;
+  transform: none !important;
+}
+.service_list {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 24px !important;
+}
+.service_item-wrap {
+  scroll-snap-align: start !important;
+  flex-shrink: 0 !important;
+  width: 580px !important;
+  max-width: 85vw !important;
+}
+
+/* Center single doctor card */
+.team_list.single-doctor {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.team_list.single-doctor .team_item {
+  max-width: 420px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+
+/* === KWALITY DENTAL CUSTOM FIXES === */
+.navbar_logo {
+  max-width: 260px !important;
+  width: auto !important;
+}
+.logo_image {
+  max-width: 260px !important;
+  width: auto !important;
+  height: 34px !important;
+  object-fit: contain !important;
+}
+
+/* Comprehensive Dental Care: Drag slider without scroll-jacking */
+.scroll-mobile_trigger {
+  height: auto !important;
+  padding-bottom: 20px !important;
+}
+.scroll-mobile_camera {
+  position: static !important;
+  top: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+.service_wrap {
+  position: relative !important;
+  height: auto !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory !important;
+  -webkit-overflow-scrolling: touch !important;
+  cursor: grab !important;
+  user-select: none !important;
+  padding-bottom: 24px !important;
+  scrollbar-width: thin !important;
+}
+.service_wrap:active, .service_wrap.is-dragging {
+  cursor: grabbing !important;
+}
+.scroll_track {
+  width: max-content !important;
+  display: flex !important;
+  transform: none !important;
+}
+.service_list {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 24px !important;
+}
+.service_item-wrap {
+  scroll-snap-align: start !important;
+  flex-shrink: 0 !important;
+  width: 480px !important;
+  max-width: 85vw !important;
+}
+
+/* Centered single doctor styling */
+.team_list.single-doctor {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.team_list.single-doctor .team_item {
+  max-width: 400px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
